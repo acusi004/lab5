@@ -17,7 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
-public class Lab5_bai2 extends AppCompatActivity {
+public class bai2 extends AppCompatActivity {
 
     ListView lvSinhVien;
 
@@ -30,9 +30,9 @@ public class Lab5_bai2 extends AppCompatActivity {
 
         Intent intent = this.getIntent();
 
-        String name = intent.getStringExtra(Lab5_bai1.KEY_NAME);
-        String diaChi = intent.getStringExtra(Lab5_bai1.KEY_DIACHI);
-        String title = intent.getStringExtra(Lab5_bai1.KEY_TITLE);
+        String name = intent.getStringExtra(bai1.KEY_NAME);
+        String diaChi = intent.getStringExtra(bai1.KEY_DIACHI);
+        String title = intent.getStringExtra(bai1.KEY_TITLE);
 
         ArrayList<Student> list = new ArrayList<>();
         list.add(new Student("Fpoly Hà Nội", "hieu", "ca mau"));
@@ -48,7 +48,7 @@ public class Lab5_bai2 extends AppCompatActivity {
         btnThem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Lab5_bai2.this, Lab5_bai1.class));
+                startActivity(new Intent(bai2.this, bai1.class));
             }
         });
     }
@@ -155,22 +155,22 @@ public class Lab5_bai2 extends AppCompatActivity {
                     if (position >= 0) {
                         list.remove(position);
                         notifyDataSetChanged();
-                        Toast.makeText(Lab5_bai2.this, "Da Xoa thanh cong !", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(bai2.this, "Da Xoa thanh cong !", Toast.LENGTH_SHORT).show();
                     } else {
-                        Toast.makeText(Lab5_bai2.this, "Chua chon ptu can xoa", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(bai2.this, "Chua chon ptu can xoa", Toast.LENGTH_SHORT).show();
                     }
                 }
             });
             btnUpdate.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(Lab5_bai2.this, sua_thong_tin.class);
+                    Intent intent = new Intent(bai2.this, edit_tt.class);
                     startActivity(intent);
 
                     Intent intent1 = getIntent();
-                    String name_sua = intent1.getStringExtra(sua_thong_tin.KEY_NAME);
-                    String diaChi_sua = intent1.getStringExtra(sua_thong_tin.KEY_DIACHI);
-                    String title_sua = intent1.getStringExtra(sua_thong_tin.KEY_TITLE);
+                    String name_sua = intent1.getStringExtra(edit_tt.KEY_NAME);
+                    String diaChi_sua = intent1.getStringExtra(edit_tt.KEY_DIACHI);
+                    String title_sua = intent1.getStringExtra(edit_tt.KEY_TITLE);
 
                     int position = lvSinhVien.getPositionForView((View) v.getParent());
                     Student student = list.get(position);

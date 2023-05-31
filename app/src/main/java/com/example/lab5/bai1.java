@@ -18,7 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
-public class Lab5_bai1 extends AppCompatActivity {
+public class bai1 extends AppCompatActivity {
 
 
     public static String KEY_NAME = "name";
@@ -54,7 +54,7 @@ public class Lab5_bai1 extends AppCompatActivity {
                 noi_Hoc noi_hoc = (noi_Hoc) spinner.getSelectedItem();
                 String title = noi_hoc.getName();
 //                String cs = coso.getText().toString();
-                Intent intent = new Intent(Lab5_bai1.this, Lab5_bai2.class);
+                Intent intent = new Intent(bai1.this, bai2.class);
                 intent.putExtra(KEY_NAME,name);
                 intent.putExtra(KEY_DIACHI,diaChi);
                 intent.putExtra(KEY_TITLE,title);

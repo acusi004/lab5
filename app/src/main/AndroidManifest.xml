@@ -26,14 +26,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".sua_thong_tin"
+            android:name=".edit_tt"
             android:exported="true" />
         <activity
-            android:name=".Lab5_bai2"
+            android:name=".bai2"
             android:exported="true">
         </activity>
         <activity
-            android:name=".Lab5_bai1"
+            android:name=".bai1"
             android:exported="true" />
     </application>
 

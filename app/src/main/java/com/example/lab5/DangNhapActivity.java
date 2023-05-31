@@ -54,7 +54,7 @@ public class DangNhapActivity extends AppCompatActivity {
                     Toast.makeText(DangNhapActivity.this, "Sai tai khoan hoac mat khau", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(DangNhapActivity.this, "Dang nhap thanh cong", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(DangNhapActivity.this, Lab5_bai2.class));
+                    startActivity(new Intent(DangNhapActivity.this, bai2.class));
                 }
             }
         });

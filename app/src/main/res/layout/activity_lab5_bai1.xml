@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:layout_margin="10dp"
-    tools:context=".Lab5_bai1">
+    tools:context=".bai1">
 
     <TextView
         android:text="Thêm Sinh Viên"
