@@ -35,9 +35,9 @@ public class Lab5_bai2 extends AppCompatActivity {
         String title = intent.getStringExtra(Lab5_bai1.KEY_TITLE);
 
         ArrayList<Student> list = new ArrayList<>();
-        list.add(new Student("Fpoly Hà Nội", "hieu", "Vĩnh Phúc"));
-        list.add(new Student("Fpoly Hà Nội", "hieu", "Nam Định"));
-        list.add(new Student("Fpoly Hà Nội", "hieu", "Vĩnh Phúc"));
+        list.add(new Student("Fpoly Hà Nội", "hieu", "ca mau"));
+        list.add(new Student("Fpoly Hà Nội", "hieu", "hcm"));
+        list.add(new Student("Fpoly Hà Nội", "hieu", "hai phong"));
         list.add(new Student("Fpoly Hà Nội", "hieu", "Nam Định"));
         list.add(new Student(title, name, diaChi));
 
